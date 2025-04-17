@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+@font-face {
+  font-family: 'Seymour One';
+  src: url('../fonts/SeymourOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Pelican {
+  font-family: 'Seymour One', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  size: 10px;
+  margin: 10px;
+}
+
+
