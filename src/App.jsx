@@ -1,7 +1,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/home_guest';
 import Homereg from './pages/home_user';
 import Sign_in_page from './pages/sign_in';
@@ -13,10 +13,10 @@ import Editprof from './pages/prof_sett';
 import Writeart from './pages/write_art';
 
 function App() {
-
   return (
     <div>
       <Routes>
+        <Route path="/" element={<Navigate to="/main" replace />} /> {/* Перенаправление */}
         <Route path="/main" element={<Home />} />
         <Route path="/mainreg" element={<Homereg />} />
         <Route path="/profile" element={<Profile />} />

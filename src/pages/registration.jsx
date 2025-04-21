@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from './home_guest';
 
 const Registration = () => {
   const navigate = useNavigate();

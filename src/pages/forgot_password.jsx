@@ -1,8 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Registration from './registration';
-import New_password from './new_password';
 
 const Forgot_password = () => {
   const navigate = useNavigate();
