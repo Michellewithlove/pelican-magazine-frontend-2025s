@@ -8,8 +8,7 @@ const Forgot_password = () => {
   const navigate = useNavigate();
   return ( 
     <div>
-        <h1>ЗАБЫЛИ ПАРОЛЬ?</h1>
-        <h1>Ввести емейл, чтобы сбросить пароль</h1>
+        <h1>Ввести email, чтобы сбросить пароль</h1>
         <button 
         type="button" 
         className="btn btn-outline-primary"
@@ -17,7 +16,7 @@ const Forgot_password = () => {
         >
         Сбросить пароль
         </button>
-        <button //Кнопка перехода в забыли пароль
+        <button //Кнопка перехода в регистрацию
         type="button" 
         className="btn btn-link"
         onClick={() => navigate("/register")} 

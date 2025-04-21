@@ -1,13 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-import Article_preview from '../components/article_prev';
 
-const Homereg = () => {
+const Writeart = () => {
   const navigate = useNavigate();
   return ( 
     <div>
-        <h1>Главная для зареганных</h1>
+        <h1>Пеликан</h1>
         <button 
         type="button" 
         className="btn btn-link-primary"
@@ -31,9 +30,16 @@ const Homereg = () => {
       >
         Выйти
       </button>
-        <Article_preview />
+      <h1>Всякие штуки для написания статьи</h1>
+      <button 
+        type="button" 
+        className="btn btn-outline-primary"
+        onClick={() => navigate("/mainreg")}  // Переход на страницу для гостей
+      >
+        Опубликовать
+      </button>
     </div>
   );
 };
 
-export default Homereg;
+export default Writeart;

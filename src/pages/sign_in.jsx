@@ -6,8 +6,27 @@ const Sign_in_page = () => {
     const navigate = useNavigate();
     return (
         <div>
-            <h1>СТРАНИЦА ВХОДА</h1>
-            <h1>тут будет ввод эмейла и пароля</h1>
+            <h1>Войдите в профиль</h1>
+            <form>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Email или номер телефона" 
+            />
+        </div>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Пароль" 
+            />
+        </div>
+        </form>
             <button //Кнопка перехода в забыли пароль
                 type="button" 
                 className="btn btn-link"

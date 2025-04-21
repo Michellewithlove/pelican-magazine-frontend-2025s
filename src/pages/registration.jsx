@@ -7,8 +7,54 @@ const Registration = () => {
   const navigate = useNavigate();
   return ( 
     <div>
-        <h1>РЕГИСТРАЦИЯ</h1>
         <h1>Вбейте ФИО, емейл, телефон, пароль и еще раз пароль</h1>
+        <form>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="ФИО" 
+            />
+        </div>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Email" 
+            />
+        </div>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="+7 (...)-..-.." 
+            />
+        </div>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Пароль" 
+            />
+        </div>
+        <div className="form-group">
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Повторите пароль" 
+            />
+        </div>
+        </form>
         <button 
         type="button" 
         className="btn btn-outline-primary"
