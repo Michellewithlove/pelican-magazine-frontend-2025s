@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Forgot_password = () => {
+const New_password = () => {
   const navigate = useNavigate();
 
   return (
@@ -13,7 +13,7 @@ const Forgot_password = () => {
         <div className="col-md-6 d-none d-md-block p-0">
           <img 
             src="/bg_registration.jpg" 
-            alt="forgot password background" 
+            alt="new password background" 
             className="w-100 h-100" 
             style={{ 
               objectFit: "cover",
@@ -34,34 +34,31 @@ const Forgot_password = () => {
                 textTransform: "uppercase"
               }}
             >
-              Введите email для сброса пароля
+              Введите новый пароль
             </h2>
 
             <form>
               <div className="mb-3">
                 <input 
-                  type="email" 
+                  type="password" 
                   className="form-control form-control-lg" 
-                  placeholder="Email" 
+                  placeholder="Новый пароль" 
+                />
+              </div>
+              <div className="mb-3">
+                <input 
+                  type="password" 
+                  className="form-control form-control-lg" 
+                  placeholder="Повторите новый пароль" 
                 />
               </div>
               <button 
                 type="button" 
                 className="btn btn-primary w-100 py-2 mb-3"
-                onClick={() => navigate("/newpass")}
+                onClick={() => navigate("/signin")}
               >
-                Сбросить пароль
+                Готово
               </button>
-              <div className="text-center">
-                <button 
-                  type="button" 
-                  className="btn btn-link p-0"
-                  onClick={() => navigate("/signin")}
-                  style={{ fontSize: "0.9rem" }}
-                >
-                  Уже есть аккаунт?
-                </button>
-              </div>
               <div className="text-center">
                 <button 
                   type="button" 
@@ -81,4 +78,4 @@ const Forgot_password = () => {
   );
 };
 
-export default Forgot_password;
+export default New_password;
